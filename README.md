@@ -1,4 +1,4 @@
-# bisect_example
+# git bisect example
 
 simple example for git bisect
 
