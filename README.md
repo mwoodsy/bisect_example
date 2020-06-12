@@ -10,6 +10,8 @@ git bisect bad
 git bisect good 448b60edeb8f3bc366e940c7e00ab89fd45d6d13
 ```
 
-448b60edeb8f3bc366e940c7e00ab89fd45d6d13 is a commit where we know the script worked correctly.
+448b60edeb8f3bc366e940c7e00ab89fd45d6d13 is a commit where we know the script worked correctly. This could also be a `tag` or version that is known to work correctly.
+`git bisect bad` does not have a commit specified so it defaults to what you are currently running.
 
-git bisect will choose a previous commit somewhere between the current commit and the good commit. Run `node index.js` if the results are 1...10 counting by 1s type `git bisect good` if the results are 2...10 counting by 2's type `git bisect bad` eventually git bisect will report the commit that broke the script. After you find the bad commit type `git bisect reset` to exit out of git bisect. 
+
+git bisect will choose a previous commit somewhere between the current bad commit and the good commit. Run `node index.js` if the results are 1...10 counting by 1s type `git bisect good` if the results are 2...10 counting by 2's type `git bisect bad` eventually git bisect will report the commit that broke the script. After you find the bad commit type `git bisect reset` to exit out of git bisect. 
