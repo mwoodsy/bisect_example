@@ -2,9 +2,9 @@ const countTo = 10;
 
 console.log("Let's count to", countTo)
 let i = 0;
-do{
+while (i<countTo){
     i += 1;
     console.log(i)
-} while (i<countTo);
+}
 
 console.log("Finished counting.")
