@@ -1,4 +1,4 @@
-const countTo = 10;
+const countTo = process.argv.slice(2)[0] ||  10;
 
 console.log("Let's count to", countTo)
 
@@ -7,4 +7,4 @@ for (let i = 1; i<=countTo; i++){
     console.log(i)
 }
 
-console.log("Finished counting.")
+console.log("FINISHED COUNTING!!!")
