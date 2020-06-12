@@ -6,3 +6,5 @@ do{
     i += 1;
     console.log(i)
 } while (i<countTo);
+
+console.log("Finished counting.")
